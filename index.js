@@ -41,6 +41,12 @@ const promptUser = () => {
       message: 'How do you install this application?',
       default: 'You load it on your computer'
     },
+    { 
+      type: 'input',
+      name: 'tutorial',
+      message: 'This is a tutorial link',
+      default: 'https://drive.google.com/file/d/1RtIUYAvBFtjZG8uW3Cptz0dDmlNrRhel/view'
+    },
     {
         type:'input',
         name: 'username',
@@ -66,6 +72,9 @@ ${answers.tests}
 
 ## Installations
 ${answers.installation}
+
+## Tutorial
+${answers.tutorial}
 `
 // const generateHTML = (answers) =>
 //   `<!DOCTYPE html>
